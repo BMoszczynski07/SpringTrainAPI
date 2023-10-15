@@ -24,6 +24,7 @@ table {
   background: #353535;
   padding: 3px;
   border-radius: 5px;
+  width: 500px;
 }
 
 tr,
@@ -42,4 +43,71 @@ td {
 
 tr:first-child td {
   background: #393939;
+}
+
+.train-crud__form {
+  margin-top: 8px;
+  /* background: #f00; */
+  padding: 40px 0;
+  border: 2px solid #353535;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.train-crud__form-title {
+  font-size: 21px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.35px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.train-crud__form-label {
+  font-size: 12px;
+  margin-bottom: -1px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  margin-left: 62px;
+  color: #606060;
+}
+
+.train-crud__form-input {
+  margin-bottom: 12px;
+  width: 250px;
+  margin-left: 60px;
+  outline: none;
+  font-size: 17px;
+  background: transparent;
+  border: 2px solid #353535;
+  border-radius: 8px;
+  padding: 4px;
+  color: #a0a0a0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+}
+
+.train-crud__form-submit {
+  margin-left: 60px;
+  width: 100px;
+  padding: 8px 12px;
+  outline: none;
+  border-radius: 8px;
+  background: rgb(102, 159, 235);
+  background: linear-gradient(
+    56deg,
+    rgba(102, 159, 235, 1) 0%,
+    rgba(177, 42, 204, 1) 100%
+  );
+  border: none;
+  color: #dbdbdb;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  margin-top: 8px;
+  cursor: pointer;
 }

@@ -23,4 +23,12 @@ public class TrainRepository {
         String sql = "SELECT * FROM pociagi";
         return jdbc.query(sql, (rs, rowNum) -> new Train(rs.getInt("id"), rs.getString("destination"), rs.getInt("ticketPrice")));
     }
+
+    public boolean save(String destination, int ticketPrice) {
+        String sql = "INSERT INTO pociagi (destination, ticketPrice) VALUES (?, ?)";
+
+        int rowsAffected = jdbc.update(sql, destination, ticketPrice);
+
+        return rowsAffected > 0;
+    }
 }
