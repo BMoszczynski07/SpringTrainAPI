@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Inter:wght@200;400;500;600&display=swap");
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  background: #191919;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #dbdbdb;
+}
+
+.train__title {
+  font-size: 23px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.35px;
+}
+
+table {
+  background: #353535;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+tr,
+td {
+  border: 2px solid #535353;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.15px;
+  font-weight: 600;
+}
+
+td {
+  background: #2e2e2e;
+  padding: 5px 8px;
+}
+
+tr:first-child td {
+  background: #393939;
+}

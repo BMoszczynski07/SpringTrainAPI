@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1 class="train__title">Rozkład jazdy pociągów</h1>
+
+    <table class="train__timetable">
+      <tr>
+        <td>Identyfikator pociągu</td>
+        <td>Kierunek</td>
+        <td>Cena biletu (PLN)</td>
+      </tr>
+      <tr th:each="train : ${trains}">
+        <td th:text="${train.id}"></td>
+        <td th:text="${train.destination}"></td>
+        <td th:text="${#numbers.formatDecimal(train.ticketPrice, 2, 'POINT', 2, 'COMMA')}"></td>
+      </tr>
+    </table>
+  </body>
+</html>
